@@ -11,7 +11,6 @@ import { AboutUs } from "./pages/AboutUs";
 import { Contact } from "./pages/Contact";
 import { Footer } from "./pages/Footer";
 import "./App.css";
-import logo from "./assets/logo.png";
 
 // ✅ Scroll to top component
 function ScrollToTop() {
@@ -32,14 +31,23 @@ function App() {
       <header className="navbar">
         <div className="navbar-inner">
           <div className="logo-section">
-            <img src={logo} alt="KeyStone Ventures Logo" className="logo-img" />
+            {/* ✅ Using logo from public/assets/logo.png */}
+            <img
+              src="/assets/logo.png"
+              alt="KeyStone Ventures Logo"
+              className="logo-img"
+            />
             <h2 className="logo-text">KeyStone Ventures</h2>
           </div>
 
           <nav className="menu">
             <ul>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/nri-investment">NRI Investment</Link></li>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/nri-investment">NRI Investment</Link>
+              </li>
 
               {/* Dropdown menu */}
               <li className="dropdown">
@@ -47,15 +55,27 @@ function App() {
                   Explore Projects ▾
                 </Link>
                 <ul className="dropdown-menu">
-                  <li><Link to="/completed-projects">Completed Projects</Link></li>
-                  <li><Link to="/upcoming-projects">Upcoming Projects</Link></li>
-                  <li><Link to="/ongoing-projects">Ongoing Projects</Link></li>
-                  <li><Link to="/puthupatinam-villas">Puthupatinam Villas</Link></li>
+                  <li>
+                    <Link to="/completed-projects">Completed Projects</Link>
+                  </li>
+                  <li>
+                    <Link to="/upcoming-projects">Upcoming Projects</Link>
+                  </li>
+                  <li>
+                    <Link to="/ongoing-projects">Ongoing Projects</Link>
+                  </li>
+                  <li>
+                    <Link to="/puthupatinam-villas">Puthupatinam Villas</Link>
+                  </li>
                 </ul>
               </li>
 
-              <li><Link to="/AboutUs">About Us</Link></li>
-              <li><Link to="/Contact">Contact Us</Link></li>
+              <li>
+                <Link to="/AboutUs">About Us</Link>
+              </li>
+              <li>
+                <Link to="/Contact">Contact Us</Link>
+              </li>
             </ul>
           </nav>
         </div>

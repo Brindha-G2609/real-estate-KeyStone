@@ -3,8 +3,8 @@ import "./ExploreProjects.css";
 
 function UpcomingProjects() {
   const projects = [
-    { id: 1, img: "src/assets/Upcoming/Casuarina Avenue.jpg", title: "Casuarina Avenue" },
-    { id: 2, img: "src/assets/Upcoming/Jasmin Garden 5 Oct.JPG", title: "Jasmin Garden" },
+    { id: 1, img: "/assets/Upcoming/Casuarina Avenue.jpg", title: "Casuarina Avenue" },
+    { id: 2, img: "/assets/Upcoming/Jasmin Garden 5 Oct.JPG", title: "Jasmin Garden" },
   ];
 
   const [popupImage, setPopupImage] = useState(null);
@@ -26,7 +26,7 @@ function UpcomingProjects() {
             className="project-card"
             onClick={() => setPopupImage(project.img)}
           >
-            <img src={project.img} alt={project.title} />
+            <img src={project.img} alt={project.title} className="project-thumb" />
             <h3>{project.title}</h3>
           </div>
         ))}
@@ -36,7 +36,7 @@ function UpcomingProjects() {
       {popupImage && (
         <div className="image-popup" onClick={() => setPopupImage(null)}>
           <span className="close-btn">&times;</span>
-          <img src={popupImage} alt="Full view" />
+          <img src={popupImage} alt="Full view" className="popup-image" />
         </div>
       )}
 

@@ -5,7 +5,7 @@ import "./Home.css";
 
 const heroBanners = [
   {
-    img: "src/assets/gn_asset/lotus-design-n-print-wRzBarqn3hs-unsplash.jpg",
+    img: "/assets/gn_asset/lotus-design-n-print-wRzBarqn3hs-unsplash.jpg",
     title: "Luxury Villas that Redefine Modern Living",
     subtitle: "Experience elegance, comfort, and serenity in every corner.",
   },
@@ -15,7 +15,7 @@ const heroBanners = [
     subtitle: "Three generations of legacy and excellence in real estate.",
   },
   {
-    img: "src/assets/gn_asset/pexels-pixabay-302083.jpg",
+    img: "/assets/gn_asset/pexels-pixabay-302083.jpg",
     title: "Where Modern Architecture Meets Heritage",
     subtitle: "Experience a blend of innovation and timeless design.",
   },
@@ -27,9 +27,9 @@ const heroBanners = [
 ];
 
 const familyImages = [
-  "src/assets/gn_asset/pexels-dariaobymaha-1683975.jpg",
+  "/assets/gn_asset/pexels-dariaobymaha-1683975.jpg",
   "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80",
-  "src/assets/gn_asset/pexels-a-darmel-7641904.jpg",
+  "/assets/gn_asset/pexels-a-darmel-7641904.jpg",
 ];
 
 const Home = () => {
@@ -66,7 +66,7 @@ const Home = () => {
           </div>
         ))}
 
-        {/* Dots navigation */}
+        {/* ✅ Dots Navigation */}
         <div className="hero-controls">
           {heroBanners.map((_, i) => (
             <span
@@ -99,44 +99,53 @@ const Home = () => {
           </p>
         </div>
       </section>
-{/* ✅ Mission Section */}
-<section className="mission-section">
-  <div className="mission-overlay"></div>
-  <div className="mission-container">
-    <h2>Our Mission</h2>
-    <div className="mission-cards">
-      <div className="mission-card">Develop quality layouts that align with market needs.</div>
-      <div className="mission-card">Ensure trust, transparency, and timely execution.</div>
-      <div className="mission-card">Build strong networks with clients, investors, and NRIs.</div>
-      <div className="mission-card">Deliver developments that bring appreciation and satisfaction.</div>
-    </div>
-  </div>
-</section>
 
-{/* ✅ Core Values Section */}
-<section className="values-section">
-  <div className="values-container">
-    <h2>Our Core Values</h2>
-    <div className="values-grid">
-      <div className="value-item">
-        <h3>Trust</h3>
-        <p>Building relationships on honesty and reliability.</p>
-      </div>
-      <div className="value-item">
-        <h3>Excellence</h3>
-        <p>Striving for precision and quality in every project.</p>
-      </div>
-      <div className="value-item">
-        <h3>Innovation</h3>
-        <p>Adapting to market trends with forward-thinking solutions.</p>
-      </div>
-      <div className="value-item">
-        <h3>Customer Focus</h3>
-        <p>Ensuring value, growth, and satisfaction for every client.</p>
-      </div>
-    </div>
-  </div>
-</section>
+      {/* ✅ Mission Section */}
+      <section className="mission-section">
+        <div className="mission-overlay"></div>
+        <div className="mission-container">
+          <h2>Our Mission</h2>
+          <div className="mission-cards">
+            <div className="mission-card">
+              Develop quality layouts that align with market needs.
+            </div>
+            <div className="mission-card">
+              Ensure trust, transparency, and timely execution.
+            </div>
+            <div className="mission-card">
+              Build strong networks with clients, investors, and NRIs.
+            </div>
+            <div className="mission-card">
+              Deliver developments that bring appreciation and satisfaction.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ✅ Core Values Section */}
+      <section className="values-section">
+        <div className="values-container">
+          <h2>Our Core Values</h2>
+          <div className="values-grid">
+            <div className="value-item">
+              <h3>Trust</h3>
+              <p>Building relationships on honesty and reliability.</p>
+            </div>
+            <div className="value-item">
+              <h3>Excellence</h3>
+              <p>Striving for precision and quality in every project.</p>
+            </div>
+            <div className="value-item">
+              <h3>Innovation</h3>
+              <p>Adapting to market trends with forward-thinking solutions.</p>
+            </div>
+            <div className="value-item">
+              <h3>Customer Focus</h3>
+              <p>Ensuring value, growth, and satisfaction for every client.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* ✅ Family Section */}
       <section className="family-section">
@@ -162,10 +171,7 @@ const Home = () => {
           Have questions or want to know more about our luxury villas? Reach out
           to our team — we’d love to help you start your dream home journey.
         </p>
-        <button
-          className="contact-btn"
-          onClick={() => navigate("/Contact")}
-        >
+        <button className="contact-btn" onClick={() => navigate("/Contact")}>
           Contact Us
         </button>
       </section>

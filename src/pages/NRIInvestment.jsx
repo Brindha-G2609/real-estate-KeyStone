@@ -16,8 +16,8 @@ function NRIInvestment() {
           <li>💰 High-potential real estate investment opportunities</li>
           <li>🔒 Secure and transparent transaction process</li>
         </ul>
-
-        <button className="nri-btn">Contact Our Team</button>
+       <a href="/Contact">
+        <button className="nri-btn">Contact Our Team</button></a>
       </div>
     </div>
   );

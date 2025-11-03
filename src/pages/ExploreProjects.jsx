@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./ExploreProjects.css";
 
-
 function ExploreProjects() {
   return (
     <div className="projects-page">
@@ -16,7 +15,7 @@ function ExploreProjects() {
         {/* Completed Projects */}
         <Link to="/completed-projects" className="project-card">
           <img
-            src="src/assets/gn_asset/tierra-mallorca-rgJ1J8SDEAY-unsplash.jpg"
+            src="/assets/gn_asset/tierra-mallorca-rgJ1J8SDEAY-unsplash.jpg"
             alt="Completed Projects"
             className="project-thumb"
           />
@@ -30,7 +29,7 @@ function ExploreProjects() {
         {/* Puthupatinam Villas */}
         <Link to="/puthupatinam-villas" className="project-card">
           <img
-            src="src/assets/gn_asset/husband-pushing-his-wife-sitting-cardboard-box.jpg"
+            src="/assets/gn_asset/husband-pushing-his-wife-sitting-cardboard-box.jpg"
             alt="Puthupatinam Villas"
             className="project-thumb"
           />
@@ -44,7 +43,7 @@ function ExploreProjects() {
         {/* Upcoming Projects */}
         <Link to="/upcoming-projects" className="project-card">
           <img
-            src="src/assets/gn_asset/young-couple-moving-into-new-home.jpg"
+            src="/assets/gn_asset/young-couple-moving-into-new-home.jpg"
             alt="Upcoming Projects"
             className="project-thumb"
           />
@@ -58,7 +57,7 @@ function ExploreProjects() {
         {/* Ongoing Projects */}
         <Link to="/ongoing-projects" className="project-card">
           <img
-            src="src/assets/gn_asset/AdobeStock_626749294_Preview.jpeg"
+            src="/assets/gn_asset/AdobeStock_626749294_Preview.jpeg"
             alt="Ongoing Projects"
             className="project-thumb"
           />

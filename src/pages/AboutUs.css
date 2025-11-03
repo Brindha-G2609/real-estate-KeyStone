@@ -1,0 +1,109 @@
+.about-container {
+  background: linear-gradient(to bottom right, #e3f2fd, #f8e6b8);
+  min-height: 100vh;
+  padding: 40px 80px;
+  font-family: "Poppins", sans-serif;
+  color: #2b2b2b;
+}
+
+/* Title */
+.page-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #b8860b;
+  margin-bottom: 30px;
+}
+
+/* Intro text */
+.intro-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Paragraphs */
+.about-container p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* Section styling */
+.vision-section,
+.mission-section,
+.values-section {
+  background: rgba(255, 255, 255, 0.8);
+  border-left: 6px solid #b8860b;
+  border-radius: 10px;
+  padding: 25px;
+  margin: 40px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.vision-section h2,
+.mission-section h2,
+.values-section h2 {
+  color: #1a237e;
+  margin-bottom: 15px;
+}
+
+.mission-section ul,
+.values-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mission-section li,
+.values-section li {
+  margin-bottom: 10px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.mission-section li::before,
+.values-section li::before {
+  content: "★";
+  position: absolute;
+  left: 0;
+  color: #b8860b;
+}
+
+/* Marquee styling */
+.marquee-container {
+  margin-top: 40px;
+  background: #b8860b;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.marquee-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 12s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 20px;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+}

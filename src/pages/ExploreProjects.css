@@ -1,0 +1,224 @@
+
+/* Make the entire project card clickable */
+.project-card {
+  text-decoration: none; /* Removes link underline */
+  color: inherit;        /* Keeps text color consistent */
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 🌅 Common Page Layout */
+.projects-page {
+  background: linear-gradient(135deg, #cfe9f7 40%, #f8e7b9 100%);
+  min-height: 100vh;
+  padding: 60px 40px;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+.projects-page h1 {
+  color: #b88a00;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.page-subtitle {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 16px;
+  color: #444;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+/* 🧩 Common Grid Layout */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 80px;
+}
+
+/* 🏗️ Common Card Design */
+.project-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.project-card h3 {
+  text-align: center;
+  color: #b88a00;
+  margin: 15px 0 8px;
+  font-size: 1.1rem;
+}
+
+/* ✨ Image Popup */
+.image-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  animation: fadeIn 0.3s ease;
+}
+
+.image-popup img {
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+}
+
+.image-popup .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.image-popup .close-btn:hover {
+  color: #b88a00;
+}
+
+/* 🔍 Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* 📱 Responsive Tweaks */
+@media (max-width: 768px) {
+  .projects-page {
+    padding: 40px 20px;
+  }
+  .project-card img {
+    height: 200px;
+  }
+}
+
+
+.completed-description {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px 40px;
+  margin-bottom: 60px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  color: #2b3a55;
+  line-height: 1.8;
+}
+
+.completed-description h2 {
+  color: #b88a00;
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.completed-description p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.completed-description ul {
+  list-style-type: disc;
+  padding-left: 25px;
+}
+
+.completed-description li {
+  margin-bottom: 10px;
+  font-size: 15.5px;
+  transition: color 0.3s ease;
+}
+
+.completed-description li:hover {
+  color: #b88a00;
+}
+
+
+.project-details {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  line-height: 1.7;
+}
+
+.project-details h2 {
+  font-size: 1.8rem;
+  color: #003366;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.project-details h3 {
+  color: #00509e;
+  margin-top: 20px;
+}
+
+.project-details p {
+  color: #333;
+  margin-bottom: 12px;
+  text-align: justify;
+}
+
+/* 🎯 Upcoming Projects - Fix for large gaps when only 2 images */
+.page-container .project-gridup {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 900px;
+  margin: 40px auto;
+}

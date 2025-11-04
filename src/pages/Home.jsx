@@ -5,22 +5,22 @@ import "./Home.css";
 
 const heroBanners = [
   {
-    img: "/assets/gn_asset/lotus-design-n-print-wRzBarqn3hs-unsplash.jpg",
+    img: "public/assets/gn_asset/jasper-boer-CvpWxeAEUOE-unsplash (1).jpg",
     title: "Luxury Villas that Redefine Modern Living",
     subtitle: "Experience elegance, comfort, and serenity in every corner.",
   },
   {
-    img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80",
+    img: "public/assets/gn_asset/luxury-beachfront-villa-sunset-with-infinity-pool.jpg",
     title: "Crafted With Precision, Built on Trust",
     subtitle: "Three generations of legacy and excellence in real estate.",
   },
   {
-    img: "/assets/gn_asset/pexels-pixabay-302083.jpg",
+    img: "public/assets/gn_asset/beachfront-bungalow-dusk.jpg",
     title: "Where Modern Architecture Meets Heritage",
     subtitle: "Experience a blend of innovation and timeless design.",
   },
   {
-    img: "https://images.unsplash.com/photo-1505691723518-36a5ac3be353?auto=format&fit=crop&w=1600&q=80",
+    img: "public/assets/gn_asset/mohd-elle-oji_NGmBI5o-unsplash.jpg",
     title: "Homes that Reflect Your Dreams",
     subtitle: "Every home is designed for the way you live today.",
   },

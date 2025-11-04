@@ -5,7 +5,7 @@ import "./Home.css";
 
 const heroBanners = [
   {
-    img: "/assets/gn_asset/jasper-boer-CvpWxeAEUOE-unsplash (1).jpg",
+    img: "/assets/gn_asset/allison-huang-_u8KhAZRGHs-unsplash.jpg",
     title: "Luxury Villas that Redefine Modern Living",
     subtitle: "Experience elegance, comfort, and serenity in every corner.",
   },

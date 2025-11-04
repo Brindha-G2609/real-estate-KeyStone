@@ -5,22 +5,22 @@ import "./Home.css";
 
 const heroBanners = [
   {
-    img: "public/assets/gn_asset/jasper-boer-CvpWxeAEUOE-unsplash (1).jpg",
+    img: "/assets/gn_asset/jasper-boer-CvpWxeAEUOE-unsplash (1).jpg",
     title: "Luxury Villas that Redefine Modern Living",
     subtitle: "Experience elegance, comfort, and serenity in every corner.",
   },
   {
-    img: "public/assets/gn_asset/luxury-beachfront-villa-sunset-with-infinity-pool.jpg",
+    img: "/assets/gn_asset/luxury-beachfront-villa-sunset-with-infinity-pool.jpg",
     title: "Crafted With Precision, Built on Trust",
     subtitle: "Three generations of legacy and excellence in real estate.",
   },
   {
-    img: "public/assets/gn_asset/beachfront-bungalow-dusk.jpg",
+    img: "/assets/gn_asset/beachfront-bungalow-dusk.jpg",
     title: "Where Modern Architecture Meets Heritage",
     subtitle: "Experience a blend of innovation and timeless design.",
   },
   {
-    img: "public/assets/gn_asset/mohd-elle-oji_NGmBI5o-unsplash.jpg",
+    img: "/assets/gn_asset/mohd-elle-oji_NGmBI5o-unsplash.jpg",
     title: "Homes that Reflect Your Dreams",
     subtitle: "Every home is designed for the way you live today.",
   },
@@ -28,7 +28,7 @@ const heroBanners = [
 
 const familyImages = [
   "/assets/gn_asset/pexels-dariaobymaha-1683975.jpg",
-  "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80",
+  "/assets/gn_asset/full-shot-parents-kissing-kid.jpg",
   "/assets/gn_asset/pexels-a-darmel-7641904.jpg",
 ];
 
